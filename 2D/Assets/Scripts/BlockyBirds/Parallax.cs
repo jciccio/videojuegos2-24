@@ -11,7 +11,7 @@ public class Parallax : MonoBehaviour
     void Start()
     {
         float size = Camera.main.orthographicSize;
-        XSize = size * 16/9 * 2;
+        XSize = size * Camera.main.aspect * 2;
     }
 
     // Update is called once per frame
