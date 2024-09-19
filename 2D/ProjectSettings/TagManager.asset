@@ -8,6 +8,11 @@ TagManager:
   - Floor
   - Sky
   - Score
+  - Horizontal Wall
+  - Vertical Wall
+  - Block
+  - Paddle
+  - Lost
   layers:
   - Default
   - TransparentFX

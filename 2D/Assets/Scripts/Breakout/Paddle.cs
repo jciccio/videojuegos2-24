@@ -9,23 +9,17 @@ public class Paddle : MonoBehaviour
     [SerializeField] float MinX = 0;
     [SerializeField] float MaxX = 17.76f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         // Obtener el punto de la pantalla del mouse
-        Debug.Log("Posicion del mouse en X es: " + Input.mousePosition.x);
+        //Debug.Log("Posicion del mouse en X es: " + Input.mousePosition.x);
 
         // Cómo normalizar?
         // [0,1]
-        Debug.Log("Posicion relativa en pantalla en X es: " + Input.mousePosition.x/Screen.width * ScreenSizeUnit);
+        //Debug.Log("Posicion relativa en pantalla en X es: " + Input.mousePosition.x/Screen.width * ScreenSizeUnit);
         float paddlePos = Input.mousePosition.x/Screen.width * ScreenSizeUnit;
-    
         //transform.position = new Vector2(paddlePos , transform.position.y);
 
         float clampX = Mathf.Clamp(paddlePos, MinX, MaxX);     
