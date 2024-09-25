@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag(Constants.DEATH_TAG)){
+            
+            AudioManager.instance.PlaySfx("BoxBreak");
             // Se acaba el juego 
             //Debug.Log("Hay una colisión (OnCollisionEnter2D) " + collision.gameObject.tag);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -38,6 +40,7 @@ public class Player : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision){
         if(collision.gameObject.CompareTag(Constants.SCORE_TAG)){
             GameManager.instance.UpdateScore(10);
+            AudioManager.instance.PlaySfx("Points");
         }
     }
 }
