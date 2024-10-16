@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 143882753}
   - component: {fileID: 143882752}
   - component: {fileID: 143882751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +972,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ForceX: 500
+  JumpSpeed: 6
   ForceDirection: 0
+  OnGround: 0
+  Jumping: 0
+  groundLength: 0.6
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!50 &1807982827
 Rigidbody2D:
   serializedVersion: 4
@@ -1139,13 +1146,13 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1807982825}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1807982826}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: RunControl
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1157,6 +1164,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 66ca4914-158e-4bd5-a393-eae334ab509a
     m_ActionName: Player/RunV2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1807982826}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 860de8dc-900a-41a9-8f3b-d4b5309b7ed7
+    m_ActionName: Player/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth,/Keyboard/w]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1172,7 +1195,7 @@ Animator:
   m_GameObject: {fileID: 1807982825}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f29db2308e765234c8e86ce57039a18e, type: 2}
+  m_Controller: {fileID: 9100000, guid: a04204d08fdc29642a02d83542a7e7e1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

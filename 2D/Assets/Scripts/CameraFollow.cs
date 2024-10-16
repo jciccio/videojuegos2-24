@@ -37,9 +37,9 @@ public class CameraFollow : MonoBehaviour
 
     private  Vector3 CalculateThreshold(){
         Rect aspect = Camera.main.pixelRect;
-        Debug.Log($"Ortographic Size {Camera.main.orthographicSize}");  
-        Debug.Log($"Width Size {aspect.width}");
-        Debug.Log($"Height Size {aspect.height}"); 
+        //Debug.Log($"Ortographic Size {Camera.main.orthographicSize}");  
+        //Debug.Log($"Width Size {aspect.width}");
+        //Debug.Log($"Height Size {aspect.height}"); 
         Vector2 threshold = new Vector2(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize );
         threshold.x -= FollowOffset.x;
         threshold.y -= FollowOffset.y;

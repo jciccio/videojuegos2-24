@@ -3,21 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Death
-  - Floor
-  - Sky
-  - Score
-  - Horizontal Wall
-  - Vertical Wall
-  - Block
-  - Paddle
-  - Lost
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
   - 
