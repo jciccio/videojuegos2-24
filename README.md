@@ -56,11 +56,11 @@ Proyecto 3D
 > [!TIP]
 > Presentaciones de los prototipos de juegos desarrollados en el semestre
 
-- [Retro Coders] https://creacion-videojuegos.github.io/build-retro-coders/
-- [Los Salvajes] https://creacion-videojuegos.github.io/build-los-salvajes/
-- [Arcade Architects] https://creacion-videojuegos.github.io/build-arcade-architects/
-- [El Arbo] https://creacion-videojuegos.github.io/build-el-arbo/
-- [Epic Byte] https://creacion-videojuegos.github.io/build-epic-byte/
+- [Retro Coders](https://creacion-videojuegos.github.io/build-retro-coders/)
+- [Los Salvajes](https://creacion-videojuegos.github.io/build-los-salvajes/)
+- [Arcade Architects](https://creacion-videojuegos.github.io/build-arcade-architects/)
+- [El Arbo](https://creacion-videojuegos.github.io/build-el-arbo/)
+- [Epic Byte](https://creacion-videojuegos.github.io/build-epic-byte/)
 
 ## Clase 11 - https://youtu.be/6UxfXSEHdq4
 
