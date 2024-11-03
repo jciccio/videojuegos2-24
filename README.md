@@ -67,3 +67,14 @@ Proyecto 3D
 - Scriptable Objects Parte 2
 - Terrenos 3D
 - Animaciones básicas 3D - Movimientos + colliders
+
+## Clase 12 - https://youtu.be/SauFkC-xmqI
+
+- Game Loops
+- Shaders 
+   - Teoría básica
+   - Shader Sencillo
+   - Shader con parámetros
+   - Manipulación de colores de pixeles
+   - Manipulación de vértices
+   - Onda Senoidal
